@@ -1,0 +1,5 @@
+<p>Songs</p>
+<%= link_to "Create New Song", new_song_path %>
+<% @songs.each do |song| %>
+  <p><%= link_to song.name, song_path(song) %></p>
+<% end %>
